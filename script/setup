@@ -1,0 +1,7 @@
+DOTFILES_DIR=$(cd $(dirname "$0")/.. && pwd)
+
+echo "Applying dotfiles..."
+
+ln -s ${DOTFILES_DIR}/gitconfig ~/.gitconfig
+
+echo "Dotfiles applied."
