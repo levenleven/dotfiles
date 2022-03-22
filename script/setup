@@ -2,6 +2,15 @@ DOTFILES_DIR=$(cd $(dirname "$0")/.. && pwd)
 
 echo "Applying dotfiles..."
 
+if [ $CODESPACES ]; then
+
+  echo "Installing utilities..."
+  
+  sudo apt update
+  sudo apt-get install -y \
+    vim
+fi
+
 ln -s ${DOTFILES_DIR}/gitconfig ~/.gitconfig
 
 echo "Dotfiles applied."
