@@ -1,0 +1,5 @@
+[user]
+	name = Aleksey Levenstein
+	email = levenleven@github.com
+[pull]
+	rebase = false
